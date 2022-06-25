@@ -121,6 +121,9 @@ body {
   overflow: hidden;
 }
 body .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #fff;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
@@ -145,12 +148,16 @@ body .container .quiz-area li {
   font-size: 20px;
   margin: 15px 0;
 }
+body .container .quiz-area li input {
+  cursor: pointer;
+}
 body .container .quiz-area label {
   cursor: pointer;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 body .container .quiz-area h2 {
   font-size: 30px;
+  text-align: center;
 }
 body .container button {
   background: #5ec6eb;
@@ -163,6 +170,7 @@ body .container button {
   text-transform: uppercase;
   color: #000;
   padding: 15px;
+  margin-top: 15px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
